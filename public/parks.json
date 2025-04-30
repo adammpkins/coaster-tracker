@@ -2557,15 +2557,18 @@
       "coasters": [
         {
           "id": "blue-streak-cedar-point",
-          "name": "Blue Streak (Cedar Point)"
+          "name": "Blue Streak (Cedar Point)",
+          "image": "blue_streak.webp"
         },
         {
           "id": "cedar-creek-mine-ride",
-          "name": "Cedar Creek Mine Ride"
+          "name": "Cedar Creek Mine Ride",
+          "image": "cedar_creek.webp"
         },
         {
           "id": "corkscrew-cedar-point",
-          "name": "Corkscrew (Cedar Point)"
+          "name": "Corkscrew (Cedar Point)",
+          "image": "corkscrew.webp"
         },
         {
           "id": "cyclone-cedar-point",
@@ -2581,11 +2584,13 @@
         },
         {
           "id": "gatekeeper",
-          "name": "GateKeeper"
+          "name": "GateKeeper",
+          "image": "gatekeeper.webp"
         },
         {
           "id": "gemini",
-          "name": "Gemini"
+          "name": "Gemini",
+          "image": "gemini.webp"
         },
         {
           "id": "high-frolics",
@@ -2605,11 +2610,13 @@
         },
         {
           "id": "magnum-xl-200",
-          "name": "Magnum XL-200"
+          "name": "Magnum XL-200",
+          "image": "magnum.webp"
         },
         {
           "id": "maverick",
-          "name": "Maverick"
+          "name": "Maverick",
+          "image": "maverick.webp"
         },
         {
           "id": "mean-streak",
@@ -2617,7 +2624,8 @@
         },
         {
           "id": "millennium-force-cedar-point",
-          "name": "Millennium Force (Cedar Point)"
+          "name": "Millennium Force (Cedar Point)",
+          "image": "millennium_force.webp"
         },
         {
           "id": "racer-cedar-point",
@@ -2625,19 +2633,23 @@
         },
         {
           "id": "raptor-cedar-point",
-          "name": "Raptor (Cedar Point)"
+          "name": "Raptor (Cedar Point)",
+          "image": "raptor.webp"
         },
         {
           "id": "rougarou",
-          "name": "Rougarou"
+          "name": "Rougarou",
+          "image": "rougarou.webp"
         },
         {
           "id": "sirens-curse",
-          "name": "Siren's Curse"
+          "name": "Siren's Curse",
+          "image": "sirens_curse.webp"
         },
         {
           "id": "steel-vengeance",
-          "name": "Steel Vengeance"
+          "name": "Steel Vengeance",
+          "image": "steel_vengeance.webp"
         },
         {
           "id": "switchback-railway-cedar-point",
@@ -2645,11 +2657,13 @@
         },
         {
           "id": "top-thrill-2",
-          "name": "Top Thrill 2"
+          "name": "Top Thrill 2",
+          "image": "top_thrill_2.webp"
         },
         {
           "id": "valravn",
-          "name": "Valravn"
+          "name": "Valravn",
+          "image": "valravn.webp"
         },
         {
           "id": "wicked-twister",
@@ -2661,7 +2675,8 @@
         },
         {
           "id": "wild-mouse-cedar-point-opened-2023",
-          "name": "Wild Mouse (Cedar Point; opened 2023)"
+          "name": "Wild Mouse (Cedar Point; opened 2023)",
+          "image": "wild_mouse.webp"
         },
         {
           "id": "wildcat-cedar-point",

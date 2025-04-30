@@ -34,19 +34,23 @@ export const Dashboard: React.FC = () => {
           You haven’t ridden any coasters yet.
         </p>
       ) : (
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {ridden.map(({ park, coaster }) => (
             <Card
               key={`${park.id}-${coaster.id}`}
-              onClick={() => setCurrent({ park, coaster })}
+              onClick={() => setCurrent({ park, coaster }) }
+              imageUrl={coaster.imageUrl}    // ← pass the URL here
             >
-              <p className="font-semibold text-lg">{coaster.name}</p>
+              <div className="bg-slate-300 dark:bg-slate-700 rounded-lg p-4 mt-32 opacity-90">
+              <p className="font-semibold text-lg ">{coaster.name}</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 {park.name}
               </p>
               <p className="mt-2">
                 Times ridden: <span className="font-bold">{coaster.rideCount}</span>
               </p>
+              </div>
             </Card>
           ))}
         </div>

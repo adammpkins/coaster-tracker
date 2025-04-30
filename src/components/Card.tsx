@@ -1,16 +1,21 @@
+// src/components/Card.tsx
 import React from 'react';
 
 export const Card: React.FC<{
+  imageUrl?: string;
   onClick?: () => void;
-  children: React.ReactNode;
-}> = ({ onClick, children }) => (
+}> = ({ imageUrl, onClick, children }) => (
   <div
     onClick={onClick}
-    className={`
-      bg-white dark:bg-gray-800 rounded-xl shadow-md 
-      hover:shadow-lg transition p-4 cursor-pointer
-    `}
+    className="relative rounded-xl shadow-md overflow-hidden hover:shadow-lg transition cursor-pointer "
+    style={{
+      backgroundImage: imageUrl ? `url(${imageUrl})` : undefined,
+      backgroundSize: 'cover',
+    }}
   >
-    {children}
+    {/* overlay so text stays legible */}
+    <div className=" p-4">
+      {children}
+    </div>
   </div>
 );
