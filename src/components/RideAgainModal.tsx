@@ -1,6 +1,7 @@
 import React from 'react';
 import { Park, Coaster, usePark } from '../contexts/ParkContext';
 import { motion } from 'framer-motion';
+import { Card } from './Card';
 
 interface Props {
   park: Park;
@@ -26,9 +27,23 @@ export const RideAgainModal: React.FC<Props> = ({ park, coaster, onClose }) => {
         <h2 className="text-2xl font-semibold mb-2">
           Ride again?
         </h2>
-        <p className="mb-4">
-          {coaster.name} @ {park.name}
-        </p>
+            <Card
+              key={`${park.id}-${coaster.id}`}
+              onClick={handleRide}
+              imageUrl={coaster.imageUrl}    // ← pass the URL here
+            >
+              <div className="bg-slate-300 dark:bg-slate-700 rounded-lg p-4 mt-32 opacity-90">
+              <p className="font-semibold text-lg ">{coaster.name}</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {park.name}
+              </p>
+              <p className="mt-2">
+                Times ridden: <span className="font-bold">{coaster.rideCount}</span>
+              </p>
+              </div>
+            </Card>
+
+        <br />
         <button
           onClick={handleRide}
           className="px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg shadow transition mr-2"

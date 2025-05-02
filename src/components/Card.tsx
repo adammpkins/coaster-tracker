@@ -7,7 +7,7 @@ export const Card: React.FC<{
 }> = ({ imageUrl, onClick, children }) => (
   <div
     onClick={onClick}
-    className="relative rounded-xl shadow-md overflow-hidden hover:shadow-lg transition cursor-pointer "
+    className="relative rounded-xl shadow-md overflow-hidden hover:shadow-lg transition cursor-pointer hover:scale-105 duration-200 ease-in-out"
     style={{
       backgroundImage: imageUrl ? `url(${imageUrl})` : undefined,
       backgroundSize: 'cover',
